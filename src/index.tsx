@@ -1,8 +1,8 @@
 import ReactDOM from 'react-dom'
+import 'bootstrap/dist/css/bootstrap.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { DragonsSite } from './Sites/Dragons/component'
 import { RocketsSite } from './Sites/Rockets/component'
-import { ShipsSite } from './Sites/Ships/component'
 import { NotFound } from './Sites/NotFound/component'
 import { Default } from './Sites/Default/component'
 import App from './App'
@@ -14,7 +14,6 @@ ReactDOM.render(
         <Route index element={<Default/>}/>
         <Route path='/dragons' element={<DragonsSite/>}/>
         <Route path='/rockets' element={<RocketsSite/>}/>
-        <Route path='/ships' element={<ShipsSite/>}/>
         <Route path='*' element={<NotFound/>}/>
       </Route>
     </Routes>

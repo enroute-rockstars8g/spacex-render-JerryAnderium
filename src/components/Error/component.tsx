@@ -5,7 +5,7 @@ export const ErrMsg = () => {
 
   return (
     <div className={classes.errMsg}>
-      <p>Sorry, there was an error.</p>
+      <p style={{color: 'white', background: '#1D1D1D', padding: '25px'}}>Sorry, there was an error.</p>
     </div>
   );
 };

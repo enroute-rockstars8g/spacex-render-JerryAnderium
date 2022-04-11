@@ -25,7 +25,7 @@ export const DragonsSite = () => {
   }, [])
 
   const mappedDragons = dragons.map((dragon: any) => (
-    <Dragons key={dragon.id} dragon={dragon} />
+      <Dragons key={dragon.id} dragon={dragon} />
   ))
 
   if (isError && !isLoading) {
@@ -39,6 +39,8 @@ export const DragonsSite = () => {
   return !isError && isLoading ? (
     <LoadMsg/>
   ) : (
-    <div>{mappedDragons}</div>
+    <div>
+      {mappedDragons}
+    </div>
   )
 }

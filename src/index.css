@@ -1,0 +1,4 @@
+@font-face {
+  font-family: 'SpaceX';
+  src: local('SpaceX'), url(./src/assets/spacex-font.tff) format('truetype');
+}
